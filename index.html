@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Interés Compuesto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Interés Compuesto</h1>
+        <label for="inversion"> Inversión Inicial ($):</label>
+        <input type="text" name="inversion" id="inversion" placeholder="Ejemplo: 1000">
+        <span id="mensajeInversion" class="error-message"></span>
+        <br><br>
+
+        <label for="tasaInteres">Tasa de Interés Anual (%):</label>
+        <select name="tasaInteres" id="tasaInteres">
+            <option value="3">3%</option>
+            <option value="17">17%</option>
+            <option value="49">49%</option>
+        </select>
+        <span id="mensajeTasa" class="error-message"></span>
+        <br><br>
+
+        <label for="periodos">Número de Periodos (años):</label>
+        <input type="text" name="periodos" id="periodos" placeholder="Ejemplo: 5">
+        <span id="mensajePeriodos" class="error-message"></span>
+        <br><br>
+
+        <button id="boton">Calcular</button>
+        <br><br>
+
+        <span id="mensajeResultado"></span>
+    </div>
+    <script src="exam.js"></script>
+</body>
+</html>
